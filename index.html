@@ -47,6 +47,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: background-color 0.2s, transform 0.1s;
       }
+      
 
       .button:hover {
         background-color: #dd9895; /* Darker blue on hover */
@@ -55,6 +56,28 @@
 
       .button:active {
         background-color: #ff462d; /* Even darker blue when active/clicked */
+      }
+
+      .button.calculate {
+        grid-column: span 5; /* Make the "=" button span all five columns */
+        background-color: #ff6347; /* Red background */
+        color: #fff; /* White text */
+        border: none;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.2s, transform 0.1s;
+      }
+
+      .button.calculate:hover {
+        background-color: #cc4b38; /* Darker red on hover */
+        transform: translateY(-2px);
+      }
+
+      .button.calculate:active {
+        background-color: #992e1f; /* Even darker red when active/clicked */
       }
 
       .output {
@@ -127,7 +150,7 @@
       <button class="button" onclick="performOperation('negate')">±</button>
       <button class="button" onclick="addNumber(0)">0</button>
       <button class="button" onclick="addNumber('.')">.</button>
-      <button class="button" onclick="calculate()">=</button>
+      <button class="button calculate" onclick="calculate()">=</button>
     </div>
 
     <script>

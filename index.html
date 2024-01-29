@@ -15,7 +15,7 @@
       dark .dark\:text-white {
         color: #fff;
       }
-      .dark .dark\:bg-gray-800 {
+      .dark .dark\:bg-red-800 {
         background-color: #ffa1a1;
       }
       .light .light\:text-black {
@@ -31,14 +31,14 @@
         margin: 100px auto 0 auto;
         padding: 1rem;
         border-radius: 1rem;
-        background: #f0f0f0; /* Light gray background */
+        background: #f0f0f0; 
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
         padding-bottom: 2rem;
       }
 
       .button {
-        background-color: #f36f68; /* Light blue background */
-        color: #fff; /* White text */
+        background-color: #f36f68; 
+        color: #fff; 
         border: none;
         padding: 1rem;
         text-align: center;
@@ -50,12 +50,12 @@
       
 
       .button:hover {
-        background-color: #dd9895; /* Darker blue on hover */
+        background-color: #dd9895; 
         transform: translateY(-2px);
       }
 
       .button:active {
-        background-color: #ff462d; /* Even darker blue when active/clicked */
+        background-color: #ff462d; 
       }
 
       .output {
@@ -87,7 +87,7 @@
 
   <body class="flex items-center justify-center min-h-screen p-4">
     <div class="calculator-grid">
-      <div class="output dark:bg-gray-800 dark:text-white" id="output">0</div>
+      <div class="output dark:bg-red-800 dark:text-white" id="output">0</div>
       <button class="button">MC</button>
       <button class="button">MR</button>
       <button class="button" onclick="memoryAdd()">M+</button>

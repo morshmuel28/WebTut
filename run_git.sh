@@ -7,7 +7,7 @@
 # You can now run your script by typing ./run_git.sh in the Terminal while in the directory of your project.
 
 # Get the current date in 'dd-mm-yy' format
-formattedDate=$(date +"%d-%m-%y")
+#formattedDate=$(date +"%d-%m-%y")
 
 # Run Git commands
 git status

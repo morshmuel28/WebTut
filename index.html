@@ -12,7 +12,7 @@
     <!-- example for dark theme styling when using tailwind cdn -->
     <style>
       /*examples for dark/light themes*/
-      .dark .dark\:text-white {
+      dark .dark\:text-white {
         color: #fff;
       }
       .dark .dark\:bg-gray-800 {
@@ -25,42 +25,40 @@
       /*add your custom css rules here*/
       .calculator-grid {
         display: grid;
-        grid-template-columns: repeat(
-          5,
-          1fr
-        ); /* Adjusted for 5 buttons per row */
+        grid-template-columns: repeat(5, 1fr);
         gap: 0.5rem;
-        max-width: 600px; /* Adjust the max width to fit your design */
-        margin: 100px auto 0 auto; /* Added top margin */
+        max-width: 600px;
+        margin: 100px auto 0 auto;
         padding: 1rem;
-        border-radius: 1rem; /* Rounded corners for the calculator itself */
-        background: #a9a1a1; /* Solid color background */
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+        border-radius: 1rem;
+        background: #f0f0f0; /* Light gray background */
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
         padding-bottom: 2rem;
       }
 
       .button {
-        background-color: #f3f4f6;
+        background-color: #63b3ed; /* Light blue background */
+        color: #fff; /* White text */
         border: none;
         padding: 1rem;
         text-align: center;
-        font-size: 1.2rem; /* Larger font size for better readability */
-        border-radius: 0.5rem; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        transition: background-color 0.2s, transform 0.1s; /* Smooth transitions for interactivity */
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.2s, transform 0.1s;
       }
 
       .button:hover {
-        background-color: #e5e7eb; /* Slightly darker on hover */
-        transform: translateY(-2px); /* Slight raise effect on hover */
+        background-color: #4299e1; /* Darker blue on hover */
+        transform: translateY(-2px);
       }
 
       .button:active {
-        background-color: #d1d5db; /* Even darker when active/clicked */
+        background-color: #2c5282; /* Even darker blue when active/clicked */
       }
 
       .output {
-        grid-column: span 5; /* Span the full width */
+        grid-column: span 5;
         background-color: #ffffff;
         border: none;
         border-radius: 0.5rem;
@@ -70,8 +68,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-size: 2rem; /* Larger display font */
-        min-height: 100px; /* Ensuring sufficient height for the display */
+        font-size: 2rem;
+        min-height: 100px;
       }
 
       @media (max-width: 640px) {
@@ -92,9 +90,7 @@
       <button class="button" onclick="insertConstant('pi')">π</button>
       <button class="button" onclick="insertConstant('e')">e</button>
       <button class="button" onclick="performOperation('clear')">C</button>
-      <button class="button" onclick="toggleSecondFunction()">
-        2<sup>nd</sup>
-      </button>
+      <button class="button" onclick="toggleSecondFunction()">2<sup>nd</sup></button>
       <button class="button" onclick="calculateFactorial()">n!</button>
       <button class="button" onclick="performOperation('square')">x²</button>
       <button class="button" onclick="performOperation('inverse')">1/x</button>
@@ -103,18 +99,14 @@
       <button class="button" onclick="deleteLast()">⌫</button>
       <button class="button" onclick="performOperation('sqrt')">√x</button>
       <button class="button" onclick="performOperation('open-paren')">(</button>
-      <button class="button" onclick="performOperation('close-paren')">
-        )
-      </button>
+      <button class="button" onclick="performOperation('close-paren')">)</button>
       <button class="button" onclick="performOperation('divide')">÷</button>
       <button class="button" onclick="performOperation('power')">x^y</button>
       <button class="button" onclick="addNumber(7)">7</button>
       <button class="button" onclick="addNumber(8)">8</button>
       <button class="button" onclick="addNumber(9)">9</button>
       <button class="button" onclick="performOperation('multiply')">×</button>
-      <button class="button" onclick="performOperation('tenPower')">
-        10^x
-      </button>
+      <button class="button" onclick="performOperation('tenPower')">10^x</button>
       <button class="button" onclick="addNumber(4)">4</button>
       <button class="button" onclick="addNumber(5)">5</button>
       <button class="button" onclick="addNumber(6)">6</button>

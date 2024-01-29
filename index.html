@@ -87,19 +87,26 @@
   <body class="flex items-center justify-center min-h-screen p-4">
     <div class="calculator-grid">
       <div class="output dark:bg-gray-800 dark:text-white" id="output">0</div>
+      <button class="button">MC</button>
+      <button class="button">MR</button>
+      <button class="button" onclick="memoryAdd()">M+</button>
+      <button class="button" onclick="memorySubtract()">M-</button>
+      <button class="button" onclick="memoryStore()">MS</button>
+      <button class="button">M</button>
+      <button class="button" onclick="toggleSecondFunction()">2<sup>nd</sup></button>
       <button class="button" onclick="insertConstant('pi')">π</button>
       <button class="button" onclick="insertConstant('e')">e</button>
       <button class="button" onclick="performOperation('clear')">C</button>
-      <button class="button" onclick="toggleSecondFunction()">2<sup>nd</sup></button>
-      <button class="button" onclick="calculateFactorial()">n!</button>
+      <button class="button" onclick="deleteLast()">⌫</button>
       <button class="button" onclick="performOperation('square')">x²</button>
       <button class="button" onclick="performOperation('inverse')">1/x</button>
       <button class="button" onclick="performOperation('abs')">|x|</button>
       <button class="button" onclick="performOperation('exp')">exp</button>
-      <button class="button" onclick="deleteLast()">⌫</button>
+      <button class="button">mod</button>
       <button class="button" onclick="performOperation('sqrt')">√x</button>
       <button class="button" onclick="performOperation('open-paren')">(</button>
       <button class="button" onclick="performOperation('close-paren')">)</button>
+      <button class="button" onclick="calculateFactorial()">n!</button>
       <button class="button" onclick="performOperation('divide')">÷</button>
       <button class="button" onclick="performOperation('power')">x^y</button>
       <button class="button" onclick="addNumber(7)">7</button>
@@ -120,9 +127,6 @@
       <button class="button" onclick="performOperation('negate')">±</button>
       <button class="button" onclick="addNumber(0)">0</button>
       <button class="button" onclick="addNumber('.')">.</button>
-      <button class="button" onclick="memoryStore()">MS</button>
-      <button class="button" onclick="memoryAdd()">M+</button>
-      <button class="button" onclick="memorySubtract()">M-</button>
       <button class="button" onclick="calculate()">=</button>
     </div>
 
